@@ -1,0 +1,37 @@
+
+それぞれのコードの意味（何をしているコードなのか）を記述すること
+
+
+
+① $(document).ready(function(){ ~ });
+HTML(DOM)の読み込みが終わったら、function()の中の処理を実行する。
+
+② $('#btn-evaluation').click(function() { ~ });
+ランクボタンをクリックすると、関数get_achievementが実行される。
+
+
+
+③ $('#national_language, #english, #mathematics, #science, #society').change(function() { ~ });
+各教科の点数に変更があった場合、関数score_indicateが実行される。
+
+
+
+④ $('#national_language').val()
+val()メソッドを用い、国語(id=national_language)の点数(value)を取得。
+
+
+⑤ Number()
+点数入力欄（フォーム）に記入された値は文字列扱いのため、数値へ変換。
+
+
+
+⑥ $("#sum_indicate").text(sum);
+合計点(id=sum_indicate)のテキストを変数sumに書き換える。
+
+
+⑦ .append
+対象要素(declaration)の最後に要素(<label ~ /label>)を追加。
+
+
+
+
